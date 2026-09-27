@@ -1,0 +1,18 @@
+{
+  "Name": "App Operator",
+  "IsCustom": true,
+  "Description": "Operations: view storage and create containers in prod. Cannot delete resources or read keys.",
+  "Actions": [
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Storage/storageAccounts/read",
+    "Microsoft.Storage/storageAccounts/blobServices/read",
+    "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+    "Microsoft.Storage/storageAccounts/blobServices/containers/write"
+  ],
+  "NotActions": [],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/subscriptions/<SUBSCRIPTION_ID>/resourceGroups/rg-app-prod"
+  ]
+}
